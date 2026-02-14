@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Future Justice Party (FJP) — Mock Campaign Website</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#121826;
+      --text:#e8eef7;
+      --muted:#b8c2d4;
+      --green:#1bb36b;
+      --violet:#8a5cff;
+      --line:#243046;
+      --shadow: 0 18px 40px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(27,179,107,.35), transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(138,92,255,.35), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,20,.65);
+      border-bottom:1px solid rgba(36,48,70,.7);
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:16px 18px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+    }
+    .mark{
+      width:42px; height:42px; border-radius:14px;
+      background: linear-gradient(135deg, var(--green), var(--violet));
+      box-shadow: var(--shadow);
+      display:grid; place-items:center;
+      font-weight:800;
+    }
+    nav{
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    nav a{
+      text-decoration:none;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid rgba(36,48,70,.9);
+      color:var(--muted);
+      font-size:14px;
+    }
+    nav a:hover{border-color:rgba(184,194,212,.6); color:var(--text)}
+    .hero{
+      padding:34px 0 14px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+    }
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      background: rgba(18,24,38,.86);
+      border:1px solid rgba(36,48,70,.8);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:20px;
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      color:var(--muted); font-weight:600; font-size:13px;
+    }
+    .pill{
+      padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(36,48,70,.8);
+      color:var(--muted);
+    }
+    h1{margin:10px 0 8px; font-size:34px; line-height:1.15}
+    h2{margin:0 0 10px; font-size:22px}
+    h3{margin:18px 0 6px; font-size:16px; color:var(--text)}
+    .muted{color:var(--muted)}
+    .line{height:1px; background:rgba(36,48,70,.8); margin:16px 0}
+    .badge{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:12px;
+      background: rgba(27,179,107,.12);
+      border:1px solid rgba(27,179,107,.25);
+      color: var(--text);
+      font-weight:700;
+      margin:8px 0;
+    }
+    .violet{
+      background: rgba(138,92,255,.12);
+      border:1px solid rgba(138,92,255,.25);
+    }
+    ul{margin:10px 0 0 18px}
+    .twoCol{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media(max-width:750px){ .twoCol{grid-template-columns:1fr} }
+    .platform li{margin:10px 0}
+    footer{padding:36px 0 50px; color:var(--muted)}
+    .small{font-size:13px}
+    .callout{
+      border-left:4px solid var(--green);
+      padding:12px 14px;
+      background: rgba(27,179,107,.08);
+      border-radius: 12px;
+      margin-top:12px;
+    }
+    .logoBox{
+      display:grid;
+      gap:10px;
+    }
+    .logoPlaceholder{
+      height:190px;
+      border-radius:16px;
+      border:1px dashed rgba(184,194,212,.35);
+      display:grid;
+      place-items:center;
+      color:rgba(184,194,212,.75);
+      background: rgba(255,255,255,.02);
+      text-align:center;
+      padding:12px;
+    }
+    .section{scroll-margin-top:90px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand">
+          <div class="mark">FJ</div>
+          <div>
+            <div style="font-weight:800">Future Justice Party (FJP)</div>
+            <div class="small muted">Mock Campaign Website • POLSC 110 • Week 06 Part 2</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#branding">Branding</a>
+          <a href="#platform">Platform</a>
+          <a href="#strategy">Strategy</a>
+          <a href="#reflection">Reflection</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="grid">
+        <div class="card">
+          <div class="kicker">
+            <span class="pill">People-first</span>
+            <span class="pill">Climate-forward</span>
+            <span class="pill">AI & Creative Rights</span>
+          </div>
+          <h1>Protect People. Power the Future.</h1>
+          <p class="muted">
+            The Future Justice Party is a progressive coalition focused on environmental sustainability,
+            women’s rights, protection for social minorities, fair economic opportunity, and responsible AI regulation.
+            As a Korean student living in the U.S., I bring a global perspective: democracies work best when they protect
+            both human dignity and long-term stability.
+          </p>
+          <div class="line"></div>
+          <div class="twoCol">
+            <div>
+              <div class="badge">Party Colors</div>
+              <p class="muted"><b>Deep Green</b> (sustainability) + <b>Violet</b> (rights & equality)</p>
+            </div>
+            <div>
+              <div class="badge violet">Slogan</div>
+              <p class="muted"><b>“Protect People. Power the Future.”</b></p>
+            </div>
+          </div>
+          <div class="callout small">
+            <b>Note for grading:</b> This website includes required pages (Branding, Platform, Strategy, Reflection),
+            10 platform planks, connections to <i>Inflation Reduction Act (2022)</i> and <i>Tax Cuts and Jobs Act (2017)</i>,
+            four strategy topics with 100+ words each, and a 150+ word reflection.
+          </div>
+        </div>
+
+        <div class="card logoBox">
+          <h2>Logo / Mascot</h2>
+          <div class="logoPlaceholder">
+            <div>
+              <div style="font-weight:800; font-size:16px">Placeholder Logo Area</div>
+              <div class="small muted" style="margin-top:6px">
+                Insert a simple logo here: “Hands protecting the Earth + rising sun.”<br/>
+                You can make it in Canva or PowerPoint Icons and export as PNG.
+              </div>
+            </div>
+          </div>
+          <p class="small muted">
+            If you don’t want to design: keep this placeholder and describe the logo concept clearly
+            (still counts as “mascot/logo” for many rubrics if visible + explained).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDING -->
+    <section id="branding" class="section card">
+      <h2>Party Branding Page</h2>
+      <ul>
+        <li><b>Party Name:</b> Future Justice Party (FJP)</li>
+        <li><b>Party Colors:</b> Deep Green (#1bb36b) and Violet (#8a5cff)</li>
+        <li><b>Mascot/Logo Concept:</b> Hands protecting Earth + Rising Sun (hope + protection + future)</li>
+        <li><b>Slogan:</b> “Protect People. Power the Future.”</li>
+      </ul>
+    </section>
+
+    <!-- PLATFORM -->
+    <section id="platform" class="section card" style="margin-top:18px">
+      <h2>Party Platform Page</h2>
+      <p class="muted">10 platform planks across social, economic, foreign, and domestic issues (2–4 sentences each).</p>
+
+      <ol class="platform">
+        <li>
+          <b>Climate Action & Clean Energy</b><br/>
+          We support large-scale public investment in renewable energy, clean manufacturing, and climate resilience.
+          Our approach aligns with the <i>Inflation Reduction Act (2022)</i>, which used federal tools to accelerate clean energy
+          deployment and domestic production.
+        </li>
+        <li>
+          <b>Healthcare Access & Lower Drug Costs</b><br/>
+          Healthcare should be affordable and accessible. We support policy that reduces prescription drug costs and expands access,
+          including reforms like Medicare drug-price negotiation authorized in the <i>Inflation Reduction Act (2022)</i>.
+        </li>
+        <li>
+          <b>Women’s Reproductive Freedom</b><br/>
+          We support federal protections for reproductive rights, including access to contraception and abortion.
+          Decisions about pregnancy belong to individuals and their medical providers, not politicians.
+        </li>
+        <li>
+          <b>AI Regulation & Creative Rights</b><br/>
+          AI companies must not train on artists’ work without consent and compensation. We support transparency requirements for training data,
+          opt-out/opt-in mechanisms, and enforceable penalties for unauthorized use that harms designers, illustrators, and creators.
+        </li>
+        <li>
+          <b>Social Welfare & Poverty Reduction</b><br/>
+          We support targeted anti-poverty programs that strengthen child wellbeing and stabilize working families.
+          A strong safety net improves long-term economic participation and community health.
+        </li>
+        <li>
+          <b>Disability Rights & Accessibility</b><br/>
+          We support stronger enforcement of disability protections and expanded accessibility standards in housing, transit, and digital services.
+          Government should remove barriers so every citizen can fully participate in society.
+        </li>
+        <li>
+          <b>LGBTQ+ Civil Rights</b><br/>
+          We support federal anti-discrimination protections in employment, housing, healthcare, and education.
+          Equal treatment under the law is non-negotiable, and dignity should not depend on zip code.
+        </li>
+        <li>
+          <b>Fair Taxation & Responsible Budgets</b><br/>
+          We support a progressive tax system where large corporations contribute fairly. In contrast to the <i>Tax Cuts and Jobs Act (2017)</i>,
+          which prioritized broad tax reduction, we emphasize balanced growth that funds public goods and reduces inequality.
+        </li>
+        <li>
+          <b>Education & Workforce Transition</b><br/>
+          We support investment in public education and job training, especially for workers displaced by automation and AI.
+          The economy should reward work while helping people adapt to technological change.
+        </li>
+        <li>
+          <b>Foreign Policy: Alliances & Human Security</b><br/>
+          We support strong alliances, diplomacy, and global cooperation on climate and technology standards.
+          Security includes energy stability, disaster resilience, and democratic norms—not only military strength.
+        </li>
+      </ol>
+
+      <div class="line"></div>
+      <p class="small muted">
+        <b>Part 1 Legislation Examples included:</b> Inflation Reduction Act of 2022; Tax Cuts and Jobs Act of 2017.
+      </p>
+    </section>
+
+    <!-- STRATEGY -->
+    <section id="strategy" class="section card" style="margin-top:18px">
+      <h2>Campaign Strategy Page</h2>
+      <p class="muted">A short campaign plan covering four topics (100+ words per topic).</p>
+
+      <h3>1) Fundraising Approach (100+ words)</h3>
+      <p>
+        The FJP campaign will rely primarily on small-dollar fundraising to signal independence from corporate influence and to build a
+        grassroots identity. We will use recurring monthly donations, clear “what your $10 funds” breakdowns, and transparent reporting to
+        increase trust. Fundraising events will include community town halls, climate-service days with local partners, and creative-industry
+        meetups focused on AI and copyright protection. We will also seek support from aligned advocacy organizations through legal,
+        disclosure-compliant channels, while prioritizing donor diversity over a small set of major contributors. The message is simple:
+        policy credibility requires financial credibility, and our campaign will be “people-funded.”
+      </p>
+
+      <h3>2) Staff / Volunteer Recruitment (100+ words)</h3>
+      <p>
+        Recruitment will focus on motivated communities already engaged in our core issues: climate activism, women’s rights groups,
+        disability and civil rights organizations, and creative professionals affected by AI training practices. We will create a structured
+        volunteer ladder (supporter → volunteer → team lead → regional coordinator) and provide short, practical training modules for canvassing,
+        phone banking, and digital outreach. Paid staff hiring will prioritize inclusion and representation, especially from communities most
+        impacted by policy outcomes. Because I am a Korean student, we will also highlight immigrant and international perspectives in outreach,
+        emphasizing that U.S. democracy benefits when it learns from global best practices in sustainability and social protection.
+      </p>
+
+      <h3>3) Target Audience & Messaging (100+ words)</h3>
+      <p>
+        Our key audiences are Gen Z and Millennial voters, suburban women, working families facing healthcare and cost pressures, and creative
+        workers concerned about AI misuse. Messaging will combine values and practicality: “protecting rights,” “lowering costs,” and “building
+        a safer future” through clean energy and ethical technology. We will frame climate policy as both moral responsibility and job creation,
+        emphasizing domestic manufacturing and community resilience. For women’s rights, we will use clear language about autonomy and privacy.
+        For AI, we will highlight real stories from designers and illustrators to show why consent and compensation matter. The tone will be
+        hopeful, policy-specific, and coalition-friendly.
+      </p>
+
+      <h3>4) Media Strategy (100+ words)</h3>
+      <p>
+        We will prioritize a “digital-first, credibility-always” media strategy. Short-form videos on TikTok, Instagram Reels, and YouTube Shorts
+        will explain one policy at a time (e.g., “What ethical AI training means in 45 seconds”). Longer YouTube interviews and podcasts will
+        provide depth for engaged voters. Traditional media will be used selectively for major announcements and to reach older audiences, with
+        a focus on healthcare affordability and economic fairness. We will host live-streamed town halls for transparency and accessibility, and
+        publish weekly policy briefs for journalists and supporters. Paid ads will target issue-based segments ethically, avoiding misinformation
+        tactics and emphasizing clarity over outrage.
+      </p>
+    </section>
+
+    <!-- REFLECTION -->
+    <section id="reflection" class="section card" style="margin-top:18px">
+      <h2>Reflection Page (150+ words)</h2>
+      <p class="muted"><b>Replace the bracketed parts</b> with your partner’s name + your role details.</p>
+
+      <p>
+        My partner was <b>[Partner Name]</b>. We worked together with one of us acting as the campaign manager and the other as the presidential
+        candidate. The most challenging part of creating a unified platform was balancing idealistic goals with a strategy that could realistically
+        attract a broad coalition of voters. Even within a progressive vision, priorities can conflict: for example, some supporters want maximum
+        climate spending immediately, while others focus on healthcare costs or economic insecurity. Our roles shaped the final platform. As the
+        candidate, I focused on clear values—women’s rights, social protections, climate action, and AI regulation for creative workers. My partner,
+        as the manager, emphasized messaging discipline and feasibility: what we could explain simply, what would resonate with key groups, and how
+        to avoid creating unnecessary vulnerabilities. This process taught me that political parties function as organized coalitions. A party is not
+        only a set of beliefs; it is also a brand, a strategy, and a system for coordinating people with different interests. Building a party means
+        negotiating priorities and presenting a coherent story to voters.
+      </p>
+
+      <div class="line"></div>
+      <p class="small muted">
+        <b>Submission note:</b> After publishing, paste your live site URL in Canvas (“website url”) OR export to PDF and upload as file if allowed.
+      </p>
+    </section>
+
+    <footer class="wrap">
+      <div class="small">
+        © 2026 Mock Campaign Website • Future Justice Party (FJP) • Prepared for POLSC 110 Week 06 Part 2
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
