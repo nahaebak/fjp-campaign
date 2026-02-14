@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Future Justice Party (FJP)</title>
+  <title>Future Justice Party (FJP) — Mock Campaign Website</title>
   <style>
     :root{
       --bg:#0b0f14;
@@ -47,7 +47,9 @@
       display:grid; place-items:center;
       font-weight:800;
     }
-    nav{display:flex; gap:10px; flex-wrap:wrap;}
+    nav{
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
     nav a{
       text-decoration:none;
       padding:10px 12px;
@@ -57,13 +59,17 @@
       font-size:14px;
     }
     nav a:hover{border-color:rgba(184,194,212,.6); color:var(--text)}
-    .hero{padding:34px 0 14px;}
+    .hero{
+      padding:34px 0 14px;
+    }
     .grid{
       display:grid;
       grid-template-columns: 1.15fr .85fr;
       gap:18px;
     }
-    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
     .card{
       background: rgba(18,24,38,.86);
       border:1px solid rgba(36,48,70,.8);
@@ -109,11 +115,31 @@
     .platform li{margin:10px 0}
     footer{padding:36px 0 50px; color:var(--muted)}
     .small{font-size:13px}
-    .logoBox{display:grid; gap:10px;}
+    .callout{
+      border-left:4px solid var(--green);
+      padding:12px 14px;
+      background: rgba(27,179,107,.08);
+      border-radius: 12px;
+      margin-top:12px;
+    }
+    .logoBox{
+      display:grid;
+      gap:10px;
+    }
+    .logoPlaceholder{
+      height:190px;
+      border-radius:16px;
+      border:1px dashed rgba(184,194,212,.35);
+      display:grid;
+      place-items:center;
+      color:rgba(184,194,212,.75);
+      background: rgba(255,255,255,.02);
+      text-align:center;
+      padding:12px;
+    }
     .section{scroll-margin-top:90px}
   </style>
 </head>
-
 <body>
   <header>
     <div class="wrap">
@@ -122,7 +148,7 @@
           <div class="mark">FJ</div>
           <div>
             <div style="font-weight:800">Future Justice Party (FJP)</div>
-            <div class="small muted">Official mock campaign site</div>
+            <div class="small muted">Mock Campaign Website • POLSC 110 • Week 06 Part 2</div>
           </div>
         </div>
         <nav>
@@ -136,7 +162,6 @@
   </header>
 
   <main class="wrap">
-    <!-- HERO -->
     <section class="hero">
       <div class="grid">
         <div class="card">
@@ -145,17 +170,11 @@
             <span class="pill">Climate-forward</span>
             <span class="pill">AI & Creative Rights</span>
           </div>
-
           <h1>Protect People. Power the Future.</h1>
-
           <p class="muted">
-            The Future Justice Party is a progressive coalition focused on environmental protection, women’s rights,
-            support for social minorities, economic fairness, and responsible AI regulation—especially to protect
-            designers and illustrators from unauthorized AI training.
+            The Future Justice Party operates as a progressive alliance which aims to protect the environment while defending women's rights and backing social minority groups and building economic justice and establishing proper AI rules to defend designers and illustrators from unauthorized AI training activities.
           </p>
-
           <div class="line"></div>
-
           <div class="twoCol">
             <div>
               <div class="badge">Party Colors</div>
@@ -166,156 +185,147 @@
               <p class="muted"><b>“Protect People. Power the Future.”</b></p>
             </div>
           </div>
+          <div class="callout small">
+            
+          </div>
         </div>
 
         <div class="card logoBox">
-          <h2>Logo / Mascot</h2>
-          <img src="logo.png" alt="FJP Logo"
-               style="width:100%; border-radius:16px; border:1px solid rgba(36,48,70,.8);" />
-          <p class="small muted">
-            Logo concept: Hands protecting the Earth + a rising sun (hope + protection + future).
-          </p>
-        </div>
+  <h2>Logo / Mascot</h2>
+  <img src="logo.png" alt="FJP Logo" style="width:100%; border-radius:16px; border:1px solid rgba(36,48,70,.8);" />
+  <p class="small muted">
+    Logo concept: Hands protecting the Earth + a rising sun (hope + protection + future).
+  </p>
+</div>
+
       </div>
     </section>
 
     <!-- BRANDING -->
     <section id="branding" class="section card">
-      <h2>Party Branding</h2>
+      <h2>Party Branding Page</h2>
       <ul>
         <li><b>Party Name:</b> Future Justice Party (FJP)</li>
         <li><b>Party Colors:</b> Deep Green (#1bb36b) and Violet (#8a5cff)</li>
-        <li><b>Mascot/Logo:</b> Hands protecting Earth + Rising Sun</li>
+        <li><b>Mascot/Logo Concept:</b> Hands protecting Earth + Rising Sun (hope + protection + future)</li>
         <li><b>Slogan:</b> “Protect People. Power the Future.”</li>
       </ul>
     </section>
 
     <!-- PLATFORM -->
     <section id="platform" class="section card" style="margin-top:18px">
-      <h2>Party Platform</h2>
-      <p class="muted">10 platform planks across social, economic, foreign, and domestic issues.</p>
+      <h2>Party Platform Page</h2>
+      <p class="muted">10 platform planks across social, economic, foreign, and domestic issues</p>
 
       <ol class="platform">
         <li>
           <b>Climate Action & Clean Energy</b><br/>
           We support large-scale public investment in renewable energy, clean manufacturing, and climate resilience.
-          Our approach aligns with the Inflation Reduction Act (2022), which expanded federal support for clean energy deployment
-          and domestic production.
+Our strategy follows the guidelines of the Inflation Reduction Act (2022) which established federal programs to speed up clean energy deployment and boost American-made product manufacturing.
+Our strategy follows the guidelines of the Inflation Reduction Act
         </li>
-
         <li>
           <b>Healthcare Access & Lower Drug Costs</b><br/>
-          Healthcare should be affordable and accessible. We support reforms that lower prescription drug costs and improve access,
-          including Medicare drug-price negotiation authorized by the Inflation Reduction Act (2022).
-        </li>
+          Healthcare needs to provide services which people can afford and obtain easily. Our organization backs policies which work to decrease medication prices and provide enhanced accessibility.
 
+The Inflation Reduction Act (2022) includes Medicare drug-price negotiation as part of its approved reforms which support these changes.
+        </li>
         <li>
           <b>Women’s Reproductive Freedom</b><br/>
           We support federal protections for reproductive rights, including access to contraception and abortion.
-          Decisions about pregnancy should be made by individuals and medical professionals—not politicians.
+          The power to decide about pregnancy rests with personal choices and medical care decisions instead of political authorities.
         </li>
-
         <li>
           <b>AI Regulation & Creative Rights</b><br/>
-          AI companies must not train on artists’ work without consent and compensation. We support transparency rules for training data,
-          opt-in/opt-out mechanisms, and enforceable penalties for unauthorized use that harms creators.
+          AI companies must not train on artists’ work without consent and compensation. The organization supports rules which require training data to become public information. 
+          The organization supports training data transparency requirements together with opt-out/opt-in systems and penalties which enforce punishment for unauthorized usage that damages designers and their creative works.
         </li>
-
         <li>
           <b>Social Welfare & Poverty Reduction</b><br/>
-          We support targeted anti-poverty programs that strengthen child wellbeing and stabilize working families.
-          A strong safety net improves long-term economic participation and community health.
+          Our organization backs specific anti-poverty initiatives which create better futures for children while they help maintain their families' financial security.
+          The establishment of a strong safety net allows people to join the economy for an extended period of time while their communities obtain better health outcomes.
         </li>
-
         <li>
           <b>Disability Rights & Accessibility</b><br/>
-          We support stronger enforcement of disability protections and expanded accessibility standards in housing, transit,
-          and digital services. Government should remove barriers so everyone can participate fully.
+          Our organization supports better enforcement of disability protection laws together with expanded rules which make housing and transit and digital services more accessible to people. 
+          The government needs to eliminate all obstacles which block citizens from achieving complete social participation.
         </li>
-
         <li>
           <b>LGBTQ+ Civil Rights</b><br/>
-          We support federal anti-discrimination protections in employment, housing, healthcare, and education.
-          Equal treatment under the law is non-negotiable.
+          The organization supports federal anti-discrimination laws which defend workers and residents who need medical treatment and educational services. The law requires equal treatment for all people while dignity must remain independent from residential areas.
         </li>
-
         <li>
           <b>Fair Taxation & Responsible Budgets</b><br/>
-          We support a progressive tax system where large corporations contribute fairly. Unlike the Tax Cuts and Jobs Act (2017),
-          which emphasized broad tax reduction, we prioritize balanced growth that funds public goods and reduces inequality.
-        </li>
+          Our organization supports a progressive tax system which requires large corporations to pay their fair share of taxes. The Tax Cuts and Jobs Act of 2017 focused on general tax reductions but we support a tax system which supports equality and public services through proper financial management.
 
+        </li>
         <li>
           <b>Education & Workforce Transition</b><br/>
-          We support investment in public education and job training—especially for workers displaced by automation and AI.
-          The economy should reward work while helping people adapt to new technology.
-        </li>
+         Our organization endorses funding for public education alongside job training programs which help employees who lost their positions because of AI and automated systems. The economic system needs to distribute its rewards between working people and those who need to learn about new technologies.
 
+        </li>
         <li>
           <b>Foreign Policy: Alliances & Human Security</b><br/>
-          We support strong alliances, diplomacy, and global cooperation on climate and technology standards.
-          Security includes energy stability, disaster resilience, and democratic norms—not only military strength.
+          Our organization supports international partnerships which work to create climate solutions and technological standards through diplomatic efforts. Security depends on three essential elements which include stable energy systems and disaster protection and democratic values in addition to military capabilities.
+
         </li>
       </ol>
+
+      <div class="line"></div>
+      <p class="small muted">
+      </p>
     </section>
 
     <!-- STRATEGY -->
     <section id="strategy" class="section card" style="margin-top:18px">
       <h2>Campaign Strategy</h2>
 
-      <h3>Fundraising Approach</h3>
+      <h3>1) Fundraising Approach</h3>
       <p>
-        The FJP campaign will rely primarily on small-dollar fundraising to signal independence from corporate influence and to build a
-        grassroots identity. We will use recurring monthly donations, clear “what your $10 funds” breakdowns, and transparent reporting to
-        increase trust. Fundraising events will include community town halls, climate-service days with local partners, and creative-industry
-        meetups focused on AI and copyright protection. We will also seek support from aligned advocacy organizations through disclosure-compliant
-        channels while prioritizing donor diversity over a small set of major contributors.
+        The FJP campaign will use small-dollar fundraising as their main strategy to prove they operate without corporate backing while they develop a grassroots image. Our organization will build trust through our monthly donation system and our detailed explanations about how $10 donations get used and our open financial disclosure practices.
+        Our fundraising activities will consist of three main events which include community town halls and climate-service days organized with local partners and creative-industry gatherings about AI and copyright protection. The organization will pursue backing from advocacy groups which share its goals through legal channels that follow disclosure requirements while seeking financial backing from various donors instead of depending on few large donors. The message is simple: policy credibility requires financial credibility, and our campaign will be “people-funded.”
       </p>
 
-      <h3>Staff & Volunteer Recruitment</h3>
+      <h3>2) Staff / Volunteer Recruitment</h3>
       <p>
-        Recruitment will focus on communities already engaged in our core issues: climate activism, women’s rights groups, disability and civil
-        rights organizations, and creative professionals affected by AI training practices. We will build a structured volunteer ladder
-        (supporter → volunteer → team lead → regional coordinator) and provide short training modules for canvassing, phone banking, and digital
-        outreach. Paid staff hiring will prioritize inclusion and representation, especially from communities most impacted by policy outcomes.
-        As a Korean student, I will also highlight immigrant and international perspectives and emphasize learning from global best practices.
+        Our recruitment efforts will target communities which actively support our main causes including climate activism and women's rights groups and disability and civil rights organizations and creative professionals who experience the effects of AI training methods. We will develop a structured volunteer progression system which starts from supporters and advances through volunteer work until reaching team leadership and regional coordination roles. The organization will deliver brief operational training programs which teach volunteers how to perform canvassing and phone banking and digital outreach activities. The organization will hire paid employees who represent all its population segments with special focus on people who experience policy results most directly.
+        Our outreach efforts will include immigrant and international viewpoints because I study in US as a Korean student. The United States will gain from its democratic system through international knowledge about environmental sustainability and social safety networks which proven their effectiveness.
       </p>
 
-      <h3>Target Audience & Messaging</h3>
+<h3>Target Audience & Messaging</h3>
       <p>
-        Our key audiences include Gen Z and Millennial voters, suburban women, working families facing healthcare and cost pressures, and creative
-        workers concerned about AI misuse. Messaging will connect values and everyday outcomes: protecting rights, lowering costs, and building a
-        safer future through clean energy and ethical technology. We will frame climate policy as both moral responsibility and job creation.
-        On women’s rights, we will use clear language about autonomy and privacy. For AI, we will highlight real stories from designers and
-        illustrators to show why consent and compensation matter.
+        Our key audiences are Gen Z and Millennial voters, suburban women, working families facing healthcare and cost pressures, and creative workers concerned about AI misuse. The communication strategy will unite core principles with functional benefits through its messages which state "protecting rights" and "lowering costs" and "building a safer future" by using clean energy and ethical technology. The organization will present climate policy as a moral necessity which generates employment opportunities through its focus on home-based manufacturing and local social strength development. Women need specific words to defend their right for self-determination and their need to keep things private. 
+        The presentation will show actual designer and illustrator experiences to prove why people need to obtain both permission and money for their work. The document will present its content with an optimistic tone which will focus on specific policies while promoting unity among different groups.
       </p>
 
-      <h3>Media Strategy</h3>
+      <h3>4) Media Strategy</h3>
       <p>
-        We will prioritize a digital-first media strategy. Short-form videos on TikTok, Instagram Reels, and YouTube Shorts will explain one policy
-        at a time (for example, “ethical AI training in 45 seconds”). Longer YouTube interviews and podcasts will provide depth for engaged voters.
-        Traditional media will be used selectively for major announcements and to reach older audiences, with a focus on healthcare affordability
-        and economic fairness. We will host live-streamed town halls for transparency and publish weekly policy briefs for journalists and supporters.
+        Our media strategy will focus on digital platforms as our main priority while maintaining absolute trustworthiness in all our operations. The platform TikTok along with Instagram Reels and YouTube Shorts will show single-policy explanations through their short video content.
+        The platform YouTube offers extended interviews and podcasts which help voters who want to learn more about the subject. The organization will use traditional media channels for its main announcements and older viewer segments through its selected media platforms. The organization will direct its resources to solve two essential problems which include medical expenses and create equal chances for all people to achieve financial stability. The organization will broadcast live town halls to establish open communication which people can watch from anywhere while we distribute policy briefs every week to reach both media professionals and our base of supporters.
+        The organization will use paid advertisements to reach target groups through ethical methods which prevent false information from being spread while showing clear messages instead of creating emotional responses.
       </p>
     </section>
 
     <!-- REFLECTION -->
     <section id="reflection" class="section card" style="margin-top:18px">
       <h2>Reflection</h2>
+
       <p>
-        My partner was Gyuna Bak. We worked together with one of us acting as the campaign manager and the other as the presidential candidate.
-        The most challenging part of creating a unified platform was balancing idealistic goals with a strategy that could realistically attract a
-        broad coalition of voters. Even within a progressive vision, priorities can conflict—for example, some supporters want maximum climate
-        spending immediately while others focus on healthcare costs or economic insecurity. As the candidate, I focused on core values: women’s
-        rights, social protections, climate action, and AI regulation that protects creative workers. My partner, as the manager, emphasized
-        messaging discipline and feasibility—what we could explain simply, what would resonate with key groups, and how to avoid unnecessary
-        vulnerabilities. This taught me that parties function as organized coalitions: a party is not only beliefs, but also a brand and a strategy
-        for coordinating people with different interests.
+        My partner was Gyuna Bak. We worked together with one of us acting as the campaign manager and the other as the presidential
+        candidate. The development of a single platform presented its toughest challenge because we had to find the proper equilibrium between
+        idealistic goals and a functional strategy which would attract voters from various groups. The progressive movement faces opposition between its fundamental goals because supporters want to dedicate their entire budget to climate initiatives yet others want to focus on medical expenses and financial stability. Our roles shaped the final platform. The candidate position became my focus area because I wanted to promote four essential values which included women's rights and social protections and climate action and AI regulation for creative workers. My partner, as the manager, emphasized messaging discipline and feasibility: what we could explain simply, what would resonate with key groups, and how to avoid creating unnecessary vulnerabilities. The process showed me how political parties operate through their established network of members. 
+        Political parties exist as more than just sets of beliefs because they also function as brands which use strategies to unite members who maintain different viewpoints. A political party requires leaders to establish their essential goals while they must create an understandable political narrative which will appeal to voters.
+      </p>
+
+      <div class="line"></div>
+      <p class="small muted">
       </p>
     </section>
 
     <footer class="wrap">
-      <div class="small">© 2026 Future Justice Party (FJP)</div>
+      <div class="small">
+        © 2026 Mock Campaign Website • Future Justice Party (FJP)
+      </div>
     </footer>
   </main>
 </body>
